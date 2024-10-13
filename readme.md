@@ -1,5 +1,3 @@
-# location of production environment
-.virtualenvs/myvirtualenv
 
 # activate virtual enviuronment
 source .virtualenvs/myvirtualenv/bin/activate
@@ -15,7 +13,7 @@ python manage.py migrate
 
 pip install django
 
-cd rkt-bknd/
+cd kwf/
 
 pip install -r requirements.txt
 
