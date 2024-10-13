@@ -1,0 +1,12 @@
+{% extends "admin/base_site.html" %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">KWF BKND</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<div id="user-tools">
+    <strong>Welcome, {{ user.get_username }}</strong>
+    | <a href="{% url 'admin:logout' %}">Log out</a>
+</div>
+{% endblock %}
